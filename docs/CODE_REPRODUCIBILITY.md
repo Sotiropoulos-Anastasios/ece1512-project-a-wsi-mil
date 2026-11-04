@@ -6,13 +6,15 @@
 
 The external ML Code Completeness Checklist covers **dependencies, training scripts, evaluation scripts, pretrained models, and results/reproduction guidance**. The statuses below are based on the submitted notebook files and the staged/committed-file list shared during repository setup. **Recheck against the final GitHub branch.**
 
-| Code completeness item | Status | Evidence / limitation | Practical improvement |
-|---|---|---|---|
-| **1. Dependencies / installation** | **Partial** | [`requirements.txt`](../requirements.txt) and README installation instructions are included; package versions are not pinned. | Record Python/PyTorch/CUDA versions; produce a tested lockfile if time permits. |
-| **2. Training implementation** | **Yes** | [`C16`](../ECE1512_ProjectA_Student_C16.ipynb), [`C17`](../ECE1512_ProjectA_Student_C17.ipynb), and [`BRACS`](../ECE1512_ProjectA_Student_BRACS.ipynb) notebooks implement A0–A4; [`combined`](../ECE1512_ALL_DATASETS_ONE_NOTEBOOK.ipynb) supports additional X ablations. | Keep notebook cells executable in order and document stage controls. |
-| **3. Evaluation implementation** | **Yes** | Validation/test routines, saved metrics JSON, class reports, prediction CSVs, learning curves and confusion matrices; source in notebooks and `utils.py`. | Make explicit which evaluations are validation-only and which are final held-out test. |
-| **4. (Pre)trained model weights** | **No (in Git)** | `.pt` / `.pth` checkpoints were excluded from the initial Git commit; published metrics do not by themselves permit model-weight inference. | Provide a lawful external download/checkpoint link **or** document exact retraining steps and disclose the omission. |
-| **5. Results + reproduction instructions** | **Partial** | README contains tables and navigable result links; independent ablations have `test_metrics.json` etc. Reproduction requires executing notebooks manually; no complete verified single command. | Record the exact notebook/settings/seed for each report table and, if available, a complete script command. |
+
+| Code completeness item | Status | Evidence / limitation |
+|---|---|---|
+| **1. Dependencies / installation** | **Partial** | `requirements.txt` and README installation instructions are available; package versions are not pinned. |
+| **2. Training implementation** | **Yes** | The C16, C17, and BRACS notebooks implement the A0–A4 experiments. The combined notebook supports additional X-series ablations. |
+| **3. Evaluation implementation** | **Yes** | Validation and testing routines, saved metrics, predictions, learning curves, and confusion matrices are included. |
+| **4. (Pre)trained model weights** | **No (in Git)** | `.pt` and `.pth` checkpoints were excluded from the initial Git commit. Reproducing inference requires separately supplied checkpoints or retraining. |
+| **5. Results and reproduction instructions** | **Partial** | The README describes execution steps and provides links to experimental results. A fully verified single-command reproduction procedure is not provided. |
+
 
 ## Four notebooks: what each demonstrates
 
