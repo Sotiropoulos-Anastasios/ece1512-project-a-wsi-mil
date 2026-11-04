@@ -1,0 +1,45 @@
+{
+  "spec": {
+    "name": "X_LHPRC_low",
+    "enabled": [
+      "L",
+      "H",
+      "P",
+      "R",
+      "C"
+    ],
+    "selection": "none",
+    "fraction": 0.2,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "pool",
+    "selection_rank": "combined",
+    "context_order": "after_pool",
+    "context_scale": 0.05,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "feature_path": "C:\\Users\\anest\\Desktop\\UofT\\Digital Image Processing\\Project A\\Project_A_Starter_Code\\Project_A_Starter_Code\\feature\\C16\\patch_feats_pretrain_medical_ssl.h5",
+  "validation": {
+    "accuracy": 100.0,
+    "macro_f1": 1.0,
+    "macro_ovr_auc": 1.0,
+    "per_class_auc": {
+      "class_0": 1.0,
+      "class_1": 1.0
+    },
+    "class_recall": {
+      "0": 1.0,
+      "1": 1.0
+    },
+    "n_slides": 27
+  },
+  "wall_seconds": 236.27466689998982,
+  "best_epoch_1based": 2
+}

@@ -1,0 +1,18 @@
+{
+  "accuracy": 88.37209302325581,
+  "macro_f1": 0.8667814113597245,
+  "macro_ovr_auc": 0.952295918367347,
+  "per_class_auc": {
+    "class_0": 0.952295918367347,
+    "class_1": 0.952295918367347
+  },
+  "class_recall": {
+    "0": 1.0,
+    "1": 0.6938775510204082
+  },
+  "n_slides": 129,
+  "test_loss_raw_ce": 0.3240945827435778,
+  "best_epoch_1based": 3,
+  "dataset": "C16",
+  "stage": "X_HR"
+}

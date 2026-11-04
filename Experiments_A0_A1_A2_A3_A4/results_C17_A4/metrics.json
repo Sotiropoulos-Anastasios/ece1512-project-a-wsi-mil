@@ -1,0 +1,51 @@
+{
+  "stage": "A4",
+  "dataset": "C17",
+  "architecture": "A3 objective + selected-token four-head contextual attention (not Nystrom)",
+  "seed": 42,
+  "epochs": 30,
+  "best_epoch_1based": 4,
+  "wall_seconds": 421.50420699996175,
+  "model_parameters": 430600,
+  "A1_tau": 0.5,
+  "A2_gamma": 1.0,
+  "A3_lambda": 0.05,
+  "A3_temperature": 0.2,
+  "A4_top_k": 16,
+  "validation": {
+    "accuracy": 83.33333333333334,
+    "macro_f1": 0.7625730994152047,
+    "macro_ovr_auc": 0.922967032967033,
+    "per_class_auc": {
+      "class_0": 0.9349999999999999,
+      "class_1": 0.7857142857142857,
+      "class_2": 0.9711538461538461,
+      "class_3": 1.0
+    },
+    "class_recall": {
+      "0": 0.85,
+      "1": 0.5,
+      "2": 0.75,
+      "3": 1.0
+    },
+    "n_slides": 30
+  },
+  "held_out_test": {
+    "accuracy": 83.5,
+    "macro_f1": 0.5493113764005306,
+    "macro_ovr_auc": 0.8811125766450637,
+    "per_class_auc": {
+      "class_0": 0.9142169683021236,
+      "class_1": 0.7102581521739131,
+      "class_2": 0.9038461538461539,
+      "class_3": 0.9961290322580645
+    },
+    "class_recall": {
+      "0": 0.9669421487603306,
+      "1": 0.0,
+      "2": 0.3333333333333333,
+      "3": 0.9777777777777777
+    },
+    "n_slides": 200
+  }
+}

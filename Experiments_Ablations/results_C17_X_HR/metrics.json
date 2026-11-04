@@ -1,0 +1,51 @@
+{
+  "dataset": "C17",
+  "stage": "X_HR",
+  "spec": {
+    "name": "X_HR",
+    "enabled": [
+      "H",
+      "R"
+    ],
+    "selection": "none",
+    "fraction": 0.2,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "pool",
+    "selection_rank": "combined",
+    "context_order": "after_pool",
+    "context_scale": 0.2,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "best_epoch_1based": 17,
+  "wall_seconds_current_session": 341.785455300007,
+  "wall_seconds_completed_epochs": 341.2438080998836,
+  "n_parameters": 166920,
+  "validation": {
+    "accuracy": 90.0,
+    "macro_f1": 0.8,
+    "macro_ovr_auc": 0.9194093406593408,
+    "per_class_auc": {
+      "class_0": 0.9400000000000001,
+      "class_1": 0.7857142857142858,
+      "class_2": 0.951923076923077,
+      "class_3": 1.0
+    },
+    "class_recall": {
+      "0": 0.95,
+      "1": 0.5,
+      "2": 0.75,
+      "3": 1.0
+    },
+    "n_slides": 30
+  },
+  "held_out_test": null,
+  "note": "New variants selected using VALIDATION; test not inspected by default."
+}

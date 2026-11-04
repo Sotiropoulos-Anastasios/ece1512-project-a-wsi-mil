@@ -1,0 +1,63 @@
+{
+  "stage": "A0",
+  "dataset": "BRACS",
+  "architecture": "Original starter notebook ABMIL: DimReduction + AttentionGated(K=1) + Classifier1FC + CE",
+  "seed": 42,
+  "epochs": 30,
+  "best_epoch_1based": 10,
+  "wall_seconds": 0.0,
+  "model_parameters": 166280,
+  "A1_tau": null,
+  "A2_gamma": null,
+  "A3_lambda": null,
+  "A3_temperature": null,
+  "A4_top_k": null,
+  "validation": {
+    "accuracy": 51.61290322580645,
+    "macro_f1": 0.41537665233317406,
+    "macro_ovr_auc": 0.834527849359386,
+    "per_class_auc": {
+      "class_0": 0.9134615384615385,
+      "class_1": 0.823076923076923,
+      "class_2": 0.8,
+      "class_3": 0.7529761904761905,
+      "class_4": 0.7916666666666666,
+      "class_5": 0.8155136268343816,
+      "class_6": 0.945
+    },
+    "class_recall": {
+      "0": 0.7,
+      "1": 0.5,
+      "2": 0.5714285714285714,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.6666666666666666,
+      "6": 0.8333333333333334
+    },
+    "n_slides": 62
+  },
+  "held_out_test": {
+    "accuracy": 40.69767441860465,
+    "macro_f1": 0.34387504387504386,
+    "macro_ovr_auc": 0.7920079100436243,
+    "per_class_auc": {
+      "class_0": 0.8145833333333332,
+      "class_1": 0.8017857142857143,
+      "class_2": 0.6363636363636364,
+      "class_3": 0.7406060606060605,
+      "class_4": 0.7252252252252253,
+      "class_5": 0.8626126126126126,
+      "class_6": 0.9628787878787879
+    },
+    "class_recall": {
+      "0": 0.3333333333333333,
+      "1": 0.4375,
+      "2": 0.4444444444444444,
+      "3": 0.0,
+      "4": 0.08333333333333333,
+      "5": 0.5,
+      "6": 0.75
+    },
+    "n_slides": 86
+  }
+}

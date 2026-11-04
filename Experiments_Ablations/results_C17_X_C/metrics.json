@@ -1,0 +1,50 @@
+{
+  "dataset": "C17",
+  "stage": "X_C",
+  "spec": {
+    "name": "X_C",
+    "enabled": [
+      "C"
+    ],
+    "selection": "none",
+    "fraction": 0.2,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "pool",
+    "selection_rank": "combined",
+    "context_order": "after_pool",
+    "context_scale": 0.2,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "best_epoch_1based": 12,
+  "wall_seconds_current_session": 346.3748924000538,
+  "wall_seconds_completed_epochs": 345.6207426999463,
+  "n_parameters": 429189,
+  "validation": {
+    "accuracy": 96.66666666666667,
+    "macro_f1": 0.9105691056910569,
+    "macro_ovr_auc": 0.9237500000000001,
+    "per_class_auc": {
+      "class_0": 0.9450000000000001,
+      "class_1": 0.75,
+      "class_2": 1.0,
+      "class_3": 1.0
+    },
+    "class_recall": {
+      "0": 1.0,
+      "1": 0.5,
+      "2": 1.0,
+      "3": 1.0
+    },
+    "n_slides": 30
+  },
+  "held_out_test": null,
+  "note": "New variants selected using VALIDATION; test not inspected by default."
+}

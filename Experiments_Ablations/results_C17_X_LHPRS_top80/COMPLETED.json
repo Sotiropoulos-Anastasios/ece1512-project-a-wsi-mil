@@ -1,0 +1,49 @@
+{
+  "spec": {
+    "name": "X_LHPRS_top80",
+    "enabled": [
+      "L",
+      "H",
+      "P",
+      "R",
+      "S"
+    ],
+    "selection": "top_fraction",
+    "fraction": 0.8,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "prototype_only",
+    "selection_rank": "combined",
+    "context_order": "after_pool",
+    "context_scale": 0.2,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "feature_path": "C:\\Users\\anest\\Desktop\\UofT\\Digital Image Processing\\Project A\\Project_A_Starter_Code\\Project_A_Starter_Code\\feature\\C17\\patch_feats_pretrain_medical_ssl.h5",
+  "validation": {
+    "accuracy": 93.33333333333333,
+    "macro_f1": 0.8331881533101045,
+    "macro_ovr_auc": 0.8950549450549451,
+    "per_class_auc": {
+      "class_0": 0.925,
+      "class_1": 0.7321428571428572,
+      "class_2": 0.9230769230769231,
+      "class_3": 1.0
+    },
+    "class_recall": {
+      "0": 1.0,
+      "1": 0.5,
+      "2": 0.75,
+      "3": 1.0
+    },
+    "n_slides": 30
+  },
+  "wall_seconds": 360.8824956000317,
+  "best_epoch_1based": 10
+}

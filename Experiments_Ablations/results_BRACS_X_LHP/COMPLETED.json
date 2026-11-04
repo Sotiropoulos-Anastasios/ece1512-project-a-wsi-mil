@@ -1,0 +1,53 @@
+{
+  "spec": {
+    "name": "X_LHP",
+    "enabled": [
+      "L",
+      "H",
+      "P"
+    ],
+    "selection": "none",
+    "fraction": 0.2,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "pool",
+    "selection_rank": "combined",
+    "context_order": "after_pool",
+    "context_scale": 0.2,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "feature_path": "C:\\Users\\anest\\Desktop\\UofT\\Digital Image Processing\\Project A\\Project_A_Starter_Code\\Project_A_Starter_Code\\feature\\BRACS\\patch_feats_pretrain_medical_ssl.h5",
+  "validation": {
+    "accuracy": 53.2258064516129,
+    "macro_f1": 0.47133622679841175,
+    "macro_ovr_auc": 0.8203232574054676,
+    "per_class_auc": {
+      "class_0": 0.9038461538461537,
+      "class_1": 0.8923076923076922,
+      "class_2": 0.7844155844155845,
+      "class_3": 0.6785714285714286,
+      "class_4": 0.7662037037037037,
+      "class_5": 0.7735849056603774,
+      "class_6": 0.9433333333333334
+    },
+    "class_recall": {
+      "0": 0.4,
+      "1": 0.9,
+      "2": 0.42857142857142855,
+      "3": 0.0,
+      "4": 0.375,
+      "5": 0.4444444444444444,
+      "6": 0.8333333333333334
+    },
+    "n_slides": 62
+  },
+  "wall_seconds": 516.4810692000319,
+  "best_epoch_1based": 6
+}

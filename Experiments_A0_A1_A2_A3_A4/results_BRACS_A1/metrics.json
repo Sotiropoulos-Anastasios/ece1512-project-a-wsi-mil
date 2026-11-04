@@ -1,0 +1,63 @@
+{
+  "stage": "A1",
+  "dataset": "BRACS",
+  "architecture": "Original ABMIL architecture, only logit-adjusted cross-entropy objective",
+  "seed": 42,
+  "epochs": 30,
+  "best_epoch_1based": 12,
+  "wall_seconds": 592.9265903999913,
+  "model_parameters": 166280,
+  "A1_tau": 0.5,
+  "A2_gamma": null,
+  "A3_lambda": null,
+  "A3_temperature": null,
+  "A4_top_k": null,
+  "validation": {
+    "accuracy": 48.38709677419355,
+    "macro_f1": 0.4472308977572136,
+    "macro_ovr_auc": 0.8191260593753855,
+    "per_class_auc": {
+      "class_0": 0.85,
+      "class_1": 0.8807692307692307,
+      "class_2": 0.7324675324675325,
+      "class_3": 0.7738095238095238,
+      "class_4": 0.7337962962962963,
+      "class_5": 0.8197064989517819,
+      "class_6": 0.9433333333333334
+    },
+    "class_recall": {
+      "0": 0.5,
+      "1": 0.4,
+      "2": 0.2857142857142857,
+      "3": 0.16666666666666666,
+      "4": 0.5,
+      "5": 0.5555555555555556,
+      "6": 0.75
+    },
+    "n_slides": 62
+  },
+  "held_out_test": {
+    "accuracy": 40.69767441860465,
+    "macro_f1": 0.3648589924451993,
+    "macro_ovr_auc": 0.8022110584610586,
+    "per_class_auc": {
+      "class_0": 0.7875,
+      "class_1": 0.7973214285714286,
+      "class_2": 0.6522366522366522,
+      "class_3": 0.7333333333333334,
+      "class_4": 0.8063063063063063,
+      "class_5": 0.8592342342342342,
+      "class_6": 0.9795454545454545
+    },
+    "class_recall": {
+      "0": 0.16666666666666666,
+      "1": 0.25,
+      "2": 0.2222222222222222,
+      "3": 0.2727272727272727,
+      "4": 0.3333333333333333,
+      "5": 0.5,
+      "6": 0.75
+    },
+    "n_slides": 86
+  }
+}

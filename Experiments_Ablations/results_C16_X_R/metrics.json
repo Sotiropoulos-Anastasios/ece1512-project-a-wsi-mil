@@ -1,0 +1,46 @@
+{
+  "dataset": "C16",
+  "stage": "X_R",
+  "spec": {
+    "name": "X_R",
+    "enabled": [
+      "R"
+    ],
+    "selection": "none",
+    "fraction": 0.2,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "pool",
+    "selection_rank": "combined",
+    "context_order": "after_pool",
+    "context_scale": 0.2,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "best_epoch_1based": 3,
+  "wall_seconds_current_session": 196.66695879999315,
+  "wall_seconds_completed_epochs": 196.10229520010762,
+  "n_parameters": 165507,
+  "validation": {
+    "accuracy": 100.0,
+    "macro_f1": 1.0,
+    "macro_ovr_auc": 1.0,
+    "per_class_auc": {
+      "class_0": 1.0,
+      "class_1": 1.0
+    },
+    "class_recall": {
+      "0": 1.0,
+      "1": 1.0
+    },
+    "n_slides": 27
+  },
+  "held_out_test": null,
+  "note": "New variants selected using VALIDATION; test not inspected by default."
+}

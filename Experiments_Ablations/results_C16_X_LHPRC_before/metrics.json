@@ -1,0 +1,50 @@
+{
+  "dataset": "C16",
+  "stage": "X_LHPRC_before",
+  "spec": {
+    "name": "X_LHPRC_before",
+    "enabled": [
+      "L",
+      "H",
+      "P",
+      "R",
+      "C"
+    ],
+    "selection": "none",
+    "fraction": 0.2,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "pool",
+    "selection_rank": "combined",
+    "context_order": "before_pool",
+    "context_scale": 0.2,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "best_epoch_1based": 2,
+  "wall_seconds_current_session": 233.66731069999514,
+  "wall_seconds_completed_epochs": 232.84724989999086,
+  "n_parameters": 429316,
+  "validation": {
+    "accuracy": 100.0,
+    "macro_f1": 1.0,
+    "macro_ovr_auc": 1.0,
+    "per_class_auc": {
+      "class_0": 1.0,
+      "class_1": 1.0
+    },
+    "class_recall": {
+      "0": 1.0,
+      "1": 1.0
+    },
+    "n_slides": 27
+  },
+  "held_out_test": null,
+  "note": "New variants selected using VALIDATION; test not inspected by default."
+}

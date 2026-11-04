@@ -1,0 +1,51 @@
+{
+  "stage": "A2",
+  "dataset": "C17",
+  "architecture": "A1 loss + class-specific gated attention and one learnable prototype per class",
+  "seed": 42,
+  "epochs": 30,
+  "best_epoch_1based": 30,
+  "wall_seconds": 316.34040220000315,
+  "model_parameters": 166920,
+  "A1_tau": 0.5,
+  "A2_gamma": 1.0,
+  "A3_lambda": null,
+  "A3_temperature": null,
+  "A4_top_k": null,
+  "validation": {
+    "accuracy": 86.66666666666667,
+    "macro_f1": 0.7682692307692308,
+    "macro_ovr_auc": 0.9318956043956044,
+    "per_class_auc": {
+      "class_0": 0.935,
+      "class_1": 0.8214285714285714,
+      "class_2": 0.9711538461538463,
+      "class_3": 1.0
+    },
+    "class_recall": {
+      "0": 0.9,
+      "1": 0.5,
+      "2": 0.75,
+      "3": 1.0
+    },
+    "n_slides": 30
+  },
+  "held_out_test": {
+    "accuracy": 78.5,
+    "macro_f1": 0.598769137030241,
+    "macro_ovr_auc": 0.8725472958041318,
+    "per_class_auc": {
+      "class_0": 0.9069986400251072,
+      "class_1": 0.7017663043478262,
+      "class_2": 0.884004884004884,
+      "class_3": 0.9974193548387097
+    },
+    "class_recall": {
+      "0": 0.8429752066115702,
+      "1": 0.125,
+      "2": 0.5,
+      "3": 0.9777777777777777
+    },
+    "n_slides": 200
+  }
+}

@@ -1,0 +1,41 @@
+
+# DATASETS - never upload
+/feature/
+/slide/
+*.h5
+*.hdf5
+*.svs
+*.tif
+*.tiff
+*.ndpi
+
+# Local Python environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+
+# Large model files
+*.pt
+*.pth
+*.ckpt
+
+# Archives and large arrays
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.npy
+*.npz
+*.parquet
+
+# Temporary files
+*.tmp
+*.log
+
+# Operating system
+.DS_Store
+Thumbs.db

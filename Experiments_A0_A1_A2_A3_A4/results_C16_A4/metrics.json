@@ -1,0 +1,43 @@
+{
+  "stage": "A4",
+  "dataset": "C16",
+  "architecture": "A3 objective + selected-token four-head contextual attention (not Nystrom)",
+  "seed": 42,
+  "epochs": 30,
+  "best_epoch_1based": 1,
+  "wall_seconds": 276.7741386999842,
+  "model_parameters": 429316,
+  "A1_tau": 0.5,
+  "A2_gamma": 1.0,
+  "A3_lambda": 0.05,
+  "A3_temperature": 0.2,
+  "A4_top_k": 16,
+  "validation": {
+    "accuracy": 100.0,
+    "macro_f1": 1.0,
+    "macro_ovr_auc": 1.0,
+    "per_class_auc": {
+      "class_0": 1.0,
+      "class_1": 1.0
+    },
+    "class_recall": {
+      "0": 1.0,
+      "1": 1.0
+    },
+    "n_slides": 27
+  },
+  "held_out_test": {
+    "accuracy": 86.82170542635659,
+    "macro_f1": 0.8525912482355313,
+    "macro_ovr_auc": 0.9170918367346939,
+    "per_class_auc": {
+      "class_0": 0.917091836734694,
+      "class_1": 0.9170918367346939
+    },
+    "class_recall": {
+      "0": 0.9625,
+      "1": 0.7142857142857143
+    },
+    "n_slides": 129
+  }
+}

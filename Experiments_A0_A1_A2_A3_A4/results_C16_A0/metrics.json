@@ -1,0 +1,43 @@
+{
+  "stage": "A0",
+  "dataset": "C16",
+  "architecture": "Original starter notebook ABMIL: DimReduction + AttentionGated(K=1) + Classifier1FC + CE",
+  "seed": 42,
+  "epochs": 30,
+  "best_epoch_1based": 2,
+  "wall_seconds": 0.0,
+  "model_parameters": 164995,
+  "A1_tau": null,
+  "A2_gamma": null,
+  "A3_lambda": null,
+  "A3_temperature": null,
+  "A4_top_k": null,
+  "validation": {
+    "accuracy": 100.0,
+    "macro_f1": 1.0,
+    "macro_ovr_auc": 1.0,
+    "per_class_auc": {
+      "class_0": 1.0,
+      "class_1": 1.0
+    },
+    "class_recall": {
+      "0": 1.0,
+      "1": 1.0
+    },
+    "n_slides": 27
+  },
+  "held_out_test": {
+    "accuracy": 82.94573643410853,
+    "macro_f1": 0.815905552672548,
+    "macro_ovr_auc": 0.870408163265306,
+    "per_class_auc": {
+      "class_0": 0.870408163265306,
+      "class_1": 0.8704081632653061
+    },
+    "class_recall": {
+      "0": 0.8875,
+      "1": 0.7346938775510204
+    },
+    "n_slides": 129
+  }
+}

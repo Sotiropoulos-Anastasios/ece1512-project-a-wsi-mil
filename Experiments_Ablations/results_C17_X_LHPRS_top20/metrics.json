@@ -1,0 +1,54 @@
+{
+  "dataset": "C17",
+  "stage": "X_LHPRS_top20",
+  "spec": {
+    "name": "X_LHPRS_top20",
+    "enabled": [
+      "L",
+      "H",
+      "P",
+      "R",
+      "S"
+    ],
+    "selection": "top_fraction",
+    "fraction": 0.2,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "prototype_only",
+    "selection_rank": "combined",
+    "context_order": "after_pool",
+    "context_scale": 0.2,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "best_epoch_1based": 28,
+  "wall_seconds_current_session": 361.9971863999963,
+  "wall_seconds_completed_epochs": 361.44932179991156,
+  "n_parameters": 166920,
+  "validation": {
+    "accuracy": 90.0,
+    "macro_f1": 0.8,
+    "macro_ovr_auc": 0.9437637362637363,
+    "per_class_auc": {
+      "class_0": 0.9550000000000001,
+      "class_1": 0.8392857142857143,
+      "class_2": 0.9807692307692308,
+      "class_3": 1.0
+    },
+    "class_recall": {
+      "0": 0.95,
+      "1": 0.5,
+      "2": 0.75,
+      "3": 1.0
+    },
+    "n_slides": 30
+  },
+  "held_out_test": null,
+  "note": "New variants selected using VALIDATION; test not inspected by default."
+}

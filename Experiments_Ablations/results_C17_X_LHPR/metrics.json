@@ -1,0 +1,53 @@
+{
+  "dataset": "C17",
+  "stage": "X_LHPR",
+  "spec": {
+    "name": "X_LHPR",
+    "enabled": [
+      "L",
+      "H",
+      "P",
+      "R"
+    ],
+    "selection": "none",
+    "fraction": 0.2,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "pool",
+    "selection_rank": "combined",
+    "context_order": "after_pool",
+    "context_scale": 0.2,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "best_epoch_1based": 25,
+  "wall_seconds_current_session": 357.1178565999726,
+  "wall_seconds_completed_epochs": 356.56610920012463,
+  "n_parameters": 166920,
+  "validation": {
+    "accuracy": 90.0,
+    "macro_f1": 0.7936507936507936,
+    "macro_ovr_auc": 0.9163186813186813,
+    "per_class_auc": {
+      "class_0": 0.9400000000000001,
+      "class_1": 0.8214285714285715,
+      "class_2": 0.9038461538461539,
+      "class_3": 1.0
+    },
+    "class_recall": {
+      "0": 1.0,
+      "1": 0.5,
+      "2": 0.5,
+      "3": 1.0
+    },
+    "n_slides": 30
+  },
+  "held_out_test": null,
+  "note": "New variants selected using VALIDATION; test not inspected by default."
+}

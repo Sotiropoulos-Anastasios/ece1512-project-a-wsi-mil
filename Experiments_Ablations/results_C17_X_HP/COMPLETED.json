@@ -1,0 +1,46 @@
+{
+  "spec": {
+    "name": "X_HP",
+    "enabled": [
+      "H",
+      "P"
+    ],
+    "selection": "none",
+    "fraction": 0.2,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "pool",
+    "selection_rank": "combined",
+    "context_order": "after_pool",
+    "context_scale": 0.2,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "feature_path": "C:\\Users\\anest\\Desktop\\UofT\\Digital Image Processing\\Project A\\Project_A_Starter_Code\\Project_A_Starter_Code\\feature\\C17\\patch_feats_pretrain_medical_ssl.h5",
+  "validation": {
+    "accuracy": 90.0,
+    "macro_f1": 0.8,
+    "macro_ovr_auc": 0.9111950549450549,
+    "per_class_auc": {
+      "class_0": 0.925,
+      "class_1": 0.7678571428571428,
+      "class_2": 0.951923076923077,
+      "class_3": 1.0
+    },
+    "class_recall": {
+      "0": 0.95,
+      "1": 0.5,
+      "2": 0.75,
+      "3": 1.0
+    },
+    "n_slides": 30
+  },
+  "wall_seconds": 346.1481421000208,
+  "best_epoch_1based": 9
+}

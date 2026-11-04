@@ -1,0 +1,57 @@
+{
+  "dataset": "BRACS",
+  "stage": "X_HP",
+  "spec": {
+    "name": "X_HP",
+    "enabled": [
+      "H",
+      "P"
+    ],
+    "selection": "none",
+    "fraction": 0.2,
+    "mass": 0.8,
+    "top_k": 16,
+    "min_keep": 8,
+    "blend": 0.5,
+    "selection_scope": "pool",
+    "selection_rank": "combined",
+    "context_order": "after_pool",
+    "context_scale": 0.2,
+    "proto_gamma": 1.0,
+    "proto_lambda": 0.05,
+    "tau": 0.5,
+    "temperature": 0.2,
+    "seed_offset": 0
+  },
+  "n_epochs": 30,
+  "best_epoch_1based": 5,
+  "wall_seconds_current_session": 519.8921966000344,
+  "wall_seconds_completed_epochs": 519.3245167999994,
+  "n_parameters": 168846,
+  "validation": {
+    "accuracy": 53.2258064516129,
+    "macro_f1": 0.4519370798172642,
+    "macro_ovr_auc": 0.8115633223719477,
+    "per_class_auc": {
+      "class_0": 0.8980769230769231,
+      "class_1": 0.8923076923076924,
+      "class_2": 0.7844155844155845,
+      "class_3": 0.6369047619047619,
+      "class_4": 0.7175925925925926,
+      "class_5": 0.7966457023060796,
+      "class_6": 0.9550000000000001
+    },
+    "class_recall": {
+      "0": 0.4,
+      "1": 1.0,
+      "2": 0.2857142857142857,
+      "3": 0.0,
+      "4": 0.25,
+      "5": 0.5555555555555556,
+      "6": 0.8333333333333334
+    },
+    "n_slides": 62
+  },
+  "held_out_test": null,
+  "note": "New variants selected using VALIDATION; test not inspected by default."
+}
