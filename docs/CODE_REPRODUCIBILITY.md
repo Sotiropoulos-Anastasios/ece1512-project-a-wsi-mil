@@ -4,7 +4,7 @@
 **Companion artifact:** Project A PDF report submitted separately through Quercus.  
 **Basis:** [ML Code Completeness Checklist](https://medium.com/paperswithcode/ml-code-completeness-checklist-e9127b168501), alongside the course's [ML Reproducibility Checklist v2.0](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist-v2.0.pdf).
 
-The external ML Code Completeness Checklist covers **dependencies, training scripts, evaluation scripts, pretrained models, and results/reproduction guidance**. The statuses below are based on the submitted notebook files and the staged/committed-file list shared during repository setup. **Recheck against the final GitHub branch.**
+The external ML Code Completeness Checklist covers **dependencies, training scripts, evaluation scripts, pretrained models, and results/reproduction guidance**. The statuses below are based on the submitted notebook files and the staged/committed-file list shared during repository setup.
 
 
 | Code completeness item | Status | Evidence / limitation |
@@ -53,14 +53,3 @@ The `feature/` and `slide/` directories are intentionally excluded from Git due 
 - Baseline metric examples: [`C16 A0`](../Experiments_A0_A1_A2_A3_A4/results_C16_A0/metrics.json), [`C17 A0`](../Experiments_A0_A1_A2_A3_A4/results_C17_A0/metrics.json), [`BRACS A0`](../Experiments_A0_A1_A2_A3_A4/results_BRACS_A0/metrics.json).
 - Extension metric examples: [`C16 H`](../Experiments_Ablations/results_C16_X_H/test_metrics.json), [`C17 HP`](../Experiments_Ablations/results_C17_X_HP/test_metrics.json), [`BRACS H`](../Experiments_Ablations/results_BRACS_X_H/test_metrics.json).
 - Visualization/data: [`report_figures/`](../report_figures/), [`A0–A4 results`](../Experiments_A0_A1_A2_A3_A4/), [`X-series ablations`](../Experiments_Ablations/).
-
-## Transparency about remaining gaps
-
-- **Reproducibility ≠ simply uploading a notebook.** Source files and recorded results are publicly inspectable, but full checkpoint-level re-evaluation still needs checkpoints, or retraining with sufficient compute.
-- **Environment:** `requirements.txt` has unpinned versions; exact installed environment should be recorded when known.
-- **Upstream extraction:** model is trained on pre-extracted features, not raw WSI pixels; some encoder and patch-generation parameters are not documented in provided course files.
-- **Statistics:** main reported results are primarily single-seed, exploratory comparisons; avoid claiming statistical significance.
-- **Evaluation:** final test-set metrics may be observed after checkpoint selection; architecture comparison after inspecting many test runs can still create selection bias.
-- **Privacy:** the PDF report includes a student identifier; consider redacting it before publishing the report itself on a public GitHub repository. The official Quercus submission can remain separate.
-
-See also the [report/paper checklist](REPORT_REPRODUCIBILITY.md), which covers the scientific claims rather than repository completeness.
