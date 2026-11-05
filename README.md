@@ -193,8 +193,6 @@ The **PDF report** and the **code repository** are complementary artifacts. The 
 
 Known limitations include primarily single-seed main comparisons, small validation partitions (especially C16/C17), unpinned dependency versions, absence of pretrained or trained `.pt` weights from the first Git commit, incomplete upstream feature-extraction details, and exploratory examination of multiple test-set outcomes. **Attention weight is not a calibrated tumor probability.** The proposed full-bag/reduced-bag prediction-consistency objective is a future experiment, not an evaluated result.
 
-For an exact frozen submission snapshot, use the Git commit hash cited in the submitted PDF report or the tagged version if one is created.
-
 ## Attribution and references
 
 This work builds on the **ECE1512 Project A course starter materials** supplied by Linfeng Ye (University of Toronto, 2026). The student completed the course model/training tasks, added evaluation exports, implemented and investigated the stated research extension, and performed additional independent ablations. Original research contributions described in the literature are cited rather than claimed as novel algorithms.
