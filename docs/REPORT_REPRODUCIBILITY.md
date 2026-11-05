@@ -5,7 +5,7 @@
 **Basis:** [Machine Learning Reproducibility Checklist v2.0](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist-v2.0.pdf), also supplied with the assignment.  
 **Scope:** This checklist concerns claims and experimental reporting in the PDF, **not** whether all code artifacts are downloadable. See [the separate code checklist](CODE_REPRODUCIBILITY.md).
 
-**Statuses:** Yes = explicitly documented; Partial = documented but incomplete or not fully verifiable; No = not provided; N/A = outside this empirical project. These answers are a draft audit: review the final PDF and repository before submission.
+**Statuses:** Yes = explicitly documented; Partial = documented but incomplete or not fully verifiable; No = not provided; N/A = outside this empirical project.
 
 | Paper checklist question | Status | Evidence / qualifications |
 |---|---|---|
@@ -34,8 +34,3 @@
 - The report should be cited for **scientific conclusions**, the repository for **code and experimental artifacts**.
 - Baseline comparisons and focused ablations are **exploratory**. Validating checkpoint epochs on held-out validation data does not make architecture selection based on inspected test scores confirmatory.
 - The **second proposal** (full-bag versus reduced-bag prediction consistency) was **not fully implemented**. X-series `S` experiments modify evidence selection/retention but are not an implementation of that entire proposal.
-- If a checklist question remains Partial/No, do **not** check Yes merely to maximize compliance. Explain the limitation.
-
-## Suggested submission cross-reference
-
-In the PDF, near the abstract or methods, link to the repository and refer to this document and [`CODE_REPRODUCIBILITY.md`](CODE_REPRODUCIBILITY.md). If the instructor requests a separate PDF checklist, this Markdown can be printed/exported to PDF **without changing the two-artifact distinction**.
