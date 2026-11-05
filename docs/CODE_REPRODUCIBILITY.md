@@ -4,7 +4,7 @@
 **Companion artifact:** Project A PDF report submitted separately through Quercus.  
 **Basis:** [ML Code Completeness Checklist](https://medium.com/paperswithcode/ml-code-completeness-checklist-e9127b168501), alongside the course's [ML Reproducibility Checklist v2.0](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist-v2.0.pdf).
 
-The external ML Code Completeness Checklist covers **dependencies, training scripts, evaluation scripts, pretrained models, and results/reproduction guidance**. The statuses below are based on the submitted notebook files and the staged/committed-file list shared during repository setup.
+The external ML Code Completeness Checklist covers **dependencies, training scripts, evaluation scripts, pretrained models, and results/reproduction guidance**.
 
 
 | Code completeness item | Status | Evidence / limitation |
