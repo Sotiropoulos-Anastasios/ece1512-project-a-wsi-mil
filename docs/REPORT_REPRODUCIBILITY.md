@@ -31,6 +31,5 @@
 
 ## Interpretation and evidence boundaries
 
-- The report should be cited for **scientific conclusions**, the repository for **code and experimental artifacts**.
 - Baseline comparisons and focused ablations are **exploratory**. Validating checkpoint epochs on held-out validation data does not make architecture selection based on inspected test scores confirmatory.
 - The **second proposal** (full-bag versus reduced-bag prediction consistency) was **not fully implemented**. X-series `S` experiments modify evidence selection/retention but are not an implementation of that entire proposal.
